@@ -1,4 +1,5 @@
 import { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Form({ onAddUser }) {
   const [form, setForm] = useState({
@@ -27,7 +28,7 @@ export default function Form({ onAddUser }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="border p-4 rounded shadow-sm bg-light mb-4">
+    <form onSubmit={handleSubmit} className="border p-4 rounded shadow-sm bg-light">
       <h4 className="mb-3 text-center">Agregar nuevo usuario</h4>
 
       <div className="row g-3">

@@ -1,13 +1,22 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export default function User({ user }) {
   return (
-    <div className="card mb-3 shadow-sm" style={{ maxWidth: "540px" }}>
+    <div
+      className="card mb-3 shadow-sm d-flex justify-content-center"
+      style={{ maxWidth: "540px", width: "100%" }}
+    >
       <div className="row g-0 align-items-center">
         <div className="col-md-4">
           <img
             src={user.photoUrl}
             className="img-fluid rounded-start"
             alt={user.name}
-            style={{ objectFit: "cover", height: "100%" }}
+            style={{
+              objectFit: "cover",
+              height: "180px",
+              width: "100%",
+            }}
           />
         </div>
         <div className="col-md-8">

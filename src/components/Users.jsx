@@ -1,10 +1,13 @@
 import User from "./User";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Users({ users }) {
   return (
-    <div className="d-flex flex-column align-items-center mt-4">
+    <div className="w-100">
       {users.map((u, i) => (
-        <User key={i} user={u} />
+        <div key={i} className="d-flex justify-content-center mb-3">
+          <User user={u} />
+        </div>
       ))}
     </div>
   );
